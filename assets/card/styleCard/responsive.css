@@ -111,6 +111,9 @@
 }
 .firstContainer{
     font-size: 15px;
+    overflow: hidden;
+white-space: normal;
+text-overflow: ellipsis;
 }
 .firstContainer h3{
     font-size: 17px;
@@ -155,4 +158,30 @@ footer{
     width: 100%;
     padding-left:0;
   }
+}
+@media (max-width: 330px){
+        .categorySetTitle{
+            margin-left: 5px;
+            width:180px ;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            }
+            .categorySetDescription{
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            }
+            .secondContainer{
+            width: 10px; 
+            height: 20px;
+            }
+            .categorySetPrice{
+            margin-top: 20px;
+            font-size: 15px;
+            margin-right: 10px;
+            }
 }
