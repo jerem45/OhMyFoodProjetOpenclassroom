@@ -187,10 +187,16 @@ padding: 5px;
 }
 .categorySetTitle{
 margin-left: 10px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
 }
 .categorySetDescription{
 margin-top: 5px;
 margin-left: 10px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
 }
 .secondContainer{
 width: 10%; 
