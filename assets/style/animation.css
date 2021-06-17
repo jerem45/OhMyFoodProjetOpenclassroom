@@ -16,12 +16,6 @@
 100%{transform: translateY(0);opacity:1;}
     }
 
-@keyframes heart{
-  0%{
-    color: black;
-  }
-  100%{color: red;}
-}
     @keyframes light{
       0%{
      display: flex;
