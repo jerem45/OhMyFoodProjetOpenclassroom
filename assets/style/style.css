@@ -70,11 +70,11 @@ font-family: 'Shrikhand', sans-serif;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color:#b2bec3;
+background-color:#dfe4ea;
 height:10%;
 width: 100%;
 margin-top: 50px;
-border-top: 5px solid grey;
+border-top: 5px solid #b2bec3;
 }
 .LocalisationIcone{
 padding: 5px;
@@ -86,15 +86,19 @@ padding: 5px;
 color: #2d3436;
 }
 .headerReservationBlockButton{
-background-color: #9356dc;
+background:linear-gradient(to left, #9356dc,#b35cdc,#cf64dc,#e86edb,#ff9daf);
 font-size: 25px;
-border: solid 2px #9356dc;
+border: solid 2px #ff9ff3;
 border-radius: 50px;
 color: white;
 padding: 10px;
 font-family: "roboto";
 margin-top: 20px;
 cursor: pointer;
+box-shadow: 1px 1px 1px 1px black;
+}
+.headerReservationBlockButton:hover{
+    box-shadow: 3px 3px 10px 3px black ;
 }
 
 
@@ -129,11 +133,9 @@ cursor: pointer;
 z-index: 1;
 }
 .operartionButton:hover{
-    opacity: 0.8;
+    opacity: 0.7;
+    background-color: #f8d3ee;
     box-shadow: 3px 4px 4px 3px black;
-}
-.operartionButton[data-active=true] {
-    background-color: #ff9ff3;
 }
 .operationCircleNumber{
 display: flex;
@@ -152,10 +154,9 @@ height: 30px;
 padding-left: 30px;
 font-size: 25px;
 }
-.operationIcone[data-active=true] {
-color: #ff79da;
-opacity: 0.9 white;
-}
+.operationIcone:hover{
+    color: #9356dc ;
+    }
 .operationParagraphe{
 padding-left: 30px;
 font-size: 25px;
@@ -187,7 +188,6 @@ height: 290px;
 overflow: hidden;
 display: flex;
 flex-direction: column;
-flex-wrap: wrap;
 border: solid 2px #f6f6f6;
 margin: 0 0 20px 0 ;
 position: relative;
@@ -210,7 +210,6 @@ object-fit: cover;
     width: 100%;
     height: 30px;
     display: flex;
-    flex-direction: row;
     justify-content: right;
     position: absolute;
 }
@@ -218,7 +217,7 @@ object-fit: cover;
 width: 90px;
 margin: 10px 10px 0 0;
 border: solid 1px #99e2d0;
-color: #16a085;
+color: green;
 background-color: #99e2d0;
 text-align: center;
 }
@@ -226,43 +225,57 @@ text-align: center;
 width: 100%;
 height: 20%;
 display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-margin-left: 15px;
+flex-direction: row;
+}
+.restaurantCardContain{
+    width: 90%;
+    height: 100% ;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    padding: 0 0 0 10px;
 }
 .restaurantCardTitle{
-font-size: 22px ;
-width: 80%;
-height: 10px;
-margin: 0 0 20px 0 ;
-padding: 0;
+font-size: 10px ;
+width: 100%;
+height:auto;
+font-size: 20px;
+padding: 0 0 0 0;
+margin: 0 0 0 0;
 }
 .restaurantCardParagraphe{
+font-size: 10px;
+height: auto;
+width: 100%;
+font-size: 16px;
+margin-bottom: 40px;
+padding: 0 0 0 0;
+margin: 10px 0 0 0;
+}
+.restaurantIcone{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 15%;
+height: 100%;
 font-size: 20px;
-width: 80%;
-margin-bottom: 10px;
-height: 20px;
-padding: 0;
-margin: 0;
 }
-.restaurantcardIcone{
-font-size: 22px;
-margin-top: 15px;
-width: 10%;
+.heartOne{
+display: block;
 }
-.fa-heart{
-    color: grey;
-    transition-property: color, transform;
-    transition-delay: 0.1s;
-    transition-duration: 2s;
-    transition-timing-function: ease-out;
-    transition: scale(1);
+.heartTwo{
+display: none;
+transition-property: color ;
+transition-duration: 0.4s;
+transition-delay: 0.1;
 }
-.fa-heart:hover{
-    color: crimson;
-    transform: scale(1.1);
+.restaurantIcone:hover .heartOne{
+display: none ;
 }
-
+.restaurantIcone:hover .heartTwo{
+display: block;
+color: #9356dc;
+}
 
 /*--------------footer--------------*/
 footer{
