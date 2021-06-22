@@ -267,7 +267,7 @@ display: block;
 display: none;
 transition-property: color ;
 transition-duration: 0.4s;
-transition-delay: 0.1;
+transition-delay: 0.1s;
 }
 .restaurantIcone:hover .heartOne{
 display: none ;
@@ -291,7 +291,7 @@ footer{
     max-width: 100%;
 }
 .footerTitle{
-    font-size: 25px bold; 
+    font-size: 25px; 
     color: white;
 }
 .footerInfo{
