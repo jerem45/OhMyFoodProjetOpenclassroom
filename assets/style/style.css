@@ -86,7 +86,7 @@ padding: 5px;
 color: #2d3436;
 }
 .headerReservationBlockButton{
-background:linear-gradient(to left, #9356dc,#b35cdc,#cf64dc,#e86edb,#ff9daf);
+    background:linear-gradient(to left, #9356dc,#b35cdc,#cf64dc,#e86edb,#f67fe6);
 font-size: 25px;
 border: solid 2px #ff9ff3;
 border-radius: 50px;

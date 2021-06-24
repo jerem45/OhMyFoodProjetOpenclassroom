@@ -149,13 +149,19 @@ text-overflow: ellipsis;
 footer{
     display: flex;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 10px;
+    height: 180px;
+  }
+  .footerContainer{
+    padding: 15px;
   }
   .footerTitle{
-    font-size: 18px; 
+    font-size: 20px; 
     color: white;
     width: 100%;
     padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
   .footerInfo{
     font-size: 18px;
@@ -210,4 +216,4 @@ footer{
                 width: 70%;
                 font-size: 22px;
             }
-}
+        }
